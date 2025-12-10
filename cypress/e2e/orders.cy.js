@@ -1,5 +1,5 @@
-describe('Orders page', () => {
-    it('Place order', () => {
+describe('Заказы', () => {
+    it('Оформление заказа', () => {
         cy.signin()
         cy.url().should('include', '/catalog');
         cy.contains('Корзина').click()

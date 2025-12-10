@@ -1,17 +1,17 @@
-describe('signin', () => {
-    it('Вход с полным набором данных', () => {
+describe('Авторизация', () => {
+    it('Авторизация с полным набором данных', () => {
         cy.visit('/login')
         cy.url().should('include', '/login');
 
-        cy.get('input[name=email]').type('zxcv@zxcv.com')
-        cy.get('input[name=password]').type('zxcv1234.')
+        cy.get('input[name=email]').type('kokoloko@kokoloko.com')
+        cy.get('input[name=password]').type('kokoloko1234.')
 
         cy.contains('Войти').click();
         cy.url().should('include', '/catalog')
         cy.logout();
     })
 
-    it('Вход с неполным набором данных', () => {
+    it('Авторизация с неполным набором данных', () => {
         cy.visit('/login')
         cy.url().should('include', '/login');
 
@@ -19,7 +19,7 @@ describe('signin', () => {
         cy.url().should('include', '/login')
     })
 
-    it('Вход с недействительным набором данных', () => {
+    it('Авторизация с недействительным набором данных', () => {
         cy.visit('/login')
         cy.get('input[name=email]').type('john@doe.com')
         cy.get('input[name=password]').type('iamnotreal')
