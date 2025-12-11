@@ -46,7 +46,7 @@ export default {
       <CartCard v-for="product in products" :key="product.id"
                 :productId="product.id"
                 :productName="product.name"
-                :productImage="'http://lifestealer86.ru' + '/' + product.image"
+                :productImage="'http://127.0.0.1/' + product.image"
                 :productPrice="product.price"
                 :productQuantity="product.quantity"
       ></CartCard>

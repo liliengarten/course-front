@@ -6,7 +6,7 @@ import '@/assets/css/style.css'
 
 Vue.config.productionTip = false
 
-export const baseUrl = "http://lifestealer86.ru/api-shop"
+export const baseUrl = "http://127.0.0.1/api"
 
 new Vue({
   router,

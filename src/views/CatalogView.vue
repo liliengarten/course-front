@@ -30,7 +30,7 @@ export default {
     <CatalogCard v-for="product in store.catalog"
           :product-id="product.id"
           :productName="product.name"
-          :productImage="'http://lifestealer86.ru' + '/' + product.image"
+          :productImage="'http://127.0.0.1/' + product.image"
           :productDescription="product.description"
           :productPrice="product.price">
     </CatalogCard>
