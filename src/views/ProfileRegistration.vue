@@ -106,7 +106,7 @@ export default {
       if (fioContainsLatin || fioContainsNumbers || fioContainsSpecialChars) this.errors.push("Поля имени, фамилии и отчества должны содержать только кириллицу.")
       if (!passwordContainsNumbers) this.errors.push("Пароль должен содержать цифры.")
       if (!passwordContainsSpecialChars) this.errors.push("Пароль должен содержать специальные символы. [! @ # $ % ^ & * ( ) _ + - .]")
-      if (this.password.length < 8) this.errors.push("Длина пароля должна быть не менее 8 символов.")
+      if (this.password.length < 8) this.errors.push("Длина пароля должна быть не менее 6 символов.")
     }
   }
 }

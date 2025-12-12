@@ -27,8 +27,8 @@ Cypress.Commands.add('signin', (username, password) => {
     cy.visit('/login')
     cy.url().should('include', '/login');
 
-    cy.get('input[name=email]').type('kokoloko@kokoloko.com')
-    cy.get('input[name=password]').type('kokoloko1234.')
+    cy.get('input[name=email]').type('zxcv@zxcv.com')
+    cy.get('input[name=password]').type('zxcv1234.')
 
     cy.contains('Войти').click();
     cy.url().should('include', '/catalog')
