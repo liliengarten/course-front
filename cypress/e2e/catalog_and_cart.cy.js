@@ -1,4 +1,9 @@
-describe('Коризина', () => {
+describe('Каталог и корзина', () => {
+    it ('Просмотр каталога', () => {
+        cy.signin();
+        cy.get('div[name="catalogCard"]').should('exist');
+    })
+
     it('Добавление товара в корзину', () => {
         cy.signin();
         cy.url().should('include','/catalog');
